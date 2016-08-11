@@ -258,7 +258,14 @@ static BOOL ValidateConcurrency(id object, SEL _cmd)
         } else if (GDConcurrencyFailureFunction) {
             GDConcurrencyFailureFunction(_cmd);
         } else {
-            BreakOnInvalidConcurrentAccess(NSStringFromSelector(_cmd), [NSThread callStackSymbols]);
+            NSString *logMessage = [NSString stringWithFormat:@"Invalid concurrent access to managed object (%@) calling '%@'; Stacktrace: %@", NSStringFromClass([object class]), NSStringFromSelector(_cmd), [NSThread callStackSymbols]];
+            if ([object respondsToSelector:@selector(userInfo)]) {
+                NSDictionary *userInfo = (NSDictionary *)[object performSelector:@selector(userInfo)];
+                if (userInfo.count > 0){
+                    logMessage = [logMessage stringByAppendingString:[NSString stringWithFormat:@"\nUserInfo : %@\n\n",userInfo]];
+                }
+            }
+            NSLog(@"%@",logMessage);
         }
     }
     return concurrencyValid;

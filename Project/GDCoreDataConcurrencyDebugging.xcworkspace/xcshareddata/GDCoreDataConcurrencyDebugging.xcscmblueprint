@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F48369D226C1084E2106B0954C2391A75187088E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F48369D226C1084E2106B0954C2391A75187088E" : 0,
+    "7EC66276110F56261149A95B426589703EED10F8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C4E663F-28BC-4EC0-8003-15C560A17C2B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F48369D226C1084E2106B0954C2391A75187088E" : "GDCoreDataConcurrencyDebugging",
+    "7EC66276110F56261149A95B426589703EED10F8" : "GDCoreDataConcurrencyDebugging\/Vendor\/fishhook"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GDCoreDataConcurrencyDebugging",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Project\/GDCoreDataConcurrencyDebugging.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/facebook\/fishhook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7EC66276110F56261149A95B426589703EED10F8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com\/GrahamDennis\/GDCoreDataConcurrencyDebugging.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F48369D226C1084E2106B0954C2391A75187088E"
+    }
+  ]
+}
